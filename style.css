@@ -1,0 +1,24 @@
+/* Ensure that the body takes up the full height of the screen */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Make sure the body stretches to full height */
+  background-color: #f0f0f0; /* Fallback color if image doesn't load */
+  background-image: url('images/background1.jpg'); /* Image as background */
+  background-size: cover; /* Cover the entire body */
+  background-position: center; /* Center the image */
+}
+
+h1 {
+  margin: 20px 0;
+  color: white; /* Make sure the title is visible on the background */
+}
+
+canvas {
+  background-color: white; /* Canvas should have no background */
+  border: 1px solid #000; /* Canvas border to distinguish it from the background */
+  position: relative;
+  z-index: 2; /* Ensure the canvas is above the background */
+}
